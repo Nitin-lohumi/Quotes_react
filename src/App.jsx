@@ -5,7 +5,7 @@ function App() {
   const [quotsType,setType] =useState('');
   const [author,setAuthor] = useState();
   const [error ,setError]= useState('');
-  const [love_quotes,setLoveQuotes] = useState("");
+  const [love_quotes,setLoveQuotes] = useState("random");
   const [count,setCount] = useState(0);
   const [startBtn,setStartBtn] = useState(false);
   async function quots_show(){

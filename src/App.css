@@ -138,51 +138,58 @@ option {
   margin: auto;
   }
   .heading{
-    font-size: 15px;
+    font-size: 13px;
     padding:0px;
   }
   .Quots1 h4{
-    margin:20px;
-    font-size: 1.2rem;
+    margin:10px 0;
+    font-size: 1.1rem;
   }
   .Quots1 h2{
-    color:rgb(25, 151, 0);
+    color:rgb(56, 78, 52);
     text-shadow: 1px 1px 1px grey;
-    font-size: 1.5rem;
-    background: #000;
-    border-radius: 10px 100px / 120px;
+    font-size: 1.3rem;
+    background: rgb(84, 247, 179);
+    border-radius: 1px 100px / 30px;
     padding:10px;
   }
   .Quots1 i{
     font-size: 1.1rem;
-    padding:2px;
+    padding: 2px 15px;
     border-radius: 1rem;
   }
   .label1{
-    font-size:20px;
+    font-size:17px;
     display: flex;
-    flex-direction:row-reverse;
+    align-items: center;
+    flex-direction:row;
     justify-content: space-around;
   }
   .label1 select{
     font-size: 1rem;
-    border:none;
-    box-shadow: 1px 1px 3px black;
-    margin-left: 10px;
-    text-align: center;
-    text-transform: capitalize;
-    border-radius: .5rem;
-    padding:5px;
-    margin:10px;
+    margin-left: 0px;
     background:white;
-    width:40%;
-    color:#000;
+    width:30%;
+    color:#0a0096;
     display: flex;
   }
-  option {
-    font-size: 7px;
+  button{
+    background: #19ca0d;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    padding:5px;
+    font-size: 1.5rem;
+    border-radius: .6rem;
+    cursor: pointer;
     width:40%;
-    height: 10px;
+    margin:20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgb(116, 106, 106);
   }
+  button:hover{
+    background: #17f208;
+    color:#ffffff;;
+   }
   
 }
