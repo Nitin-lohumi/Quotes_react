@@ -1,0 +1,188 @@
+body{
+  padding:0;
+  margin:0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  display:grid;
+  margin:auto;
+  mask: conic-gradient(from 15deg,#0000,#000);
+  animation: l26 1s infinite steps(12);
+}
+.loader,
+.loader:before,
+.loader:after{
+  background:
+    radial-gradient(closest-side at 50% 12.5%,
+     #000000 96%,#0000) 50% 0/20% 80% repeat-y,
+    radial-gradient(closest-side at 12.5% 50%,
+     #000000 96%,#0000) 0 50%/80% 20% repeat-x;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  transform: rotate(30deg);
+}
+.loader:after {
+  transform: rotate(60deg);
+}
+@keyframes l26 {
+  100% {transform:rotate(1turn)}
+}
+.Main_box{
+border:0px solid black;
+width: 40%;
+margin: auto;
+text-align: center;
+box-shadow:1px 1px 5px grey;
+border-radius: .5rem;
+padding:15px;
+}
+
+.heading{
+  font-size: 14px;
+  text-transform: capitalize;
+  color:rgb(210, 0, 0);
+  text-shadow: 1px 1px 2px black;
+  padding:4px;
+}
+
+button{
+  background: rgb(29, 13, 94);
+  color:rgb(0, 253, 253);
+  border:none;
+  outline: none;
+  padding:5px;
+  font-size: 1.2rem;
+  border-radius: .6rem;
+  cursor: pointer;
+  width:40%;
+  margin:20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+button:hover{
+ background:blue;
+ color:black;
+}
+button:active{
+  outline: 1px solid rgb(255, 255, 255);
+}
+.Quots1{
+  display: flex;
+  flex-direction: column;
+}
+.Quots1 h4{
+  position: absolute;
+  margin:10px;
+}
+.Quots1 h2{
+  color:rgb(0, 0, 0);
+  background: #3aff2c;
+  border-radius: 10px 100px / 120px;
+  padding:7px;
+  font-size: 1rem;
+}
+.Quots1 i{
+  background: #000;
+  margin:20px 0;
+  width:35%;
+  color:white;
+  margin:auto;
+  border-radius: 120px 120px / 100px;
+}
+.label1{
+  font-size:22px;
+}
+.label1 select{
+  font-size: 1.2rem;
+  border:none;
+  box-shadow: 1px 1px 3px black;
+  margin-left: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: .5rem;
+  padding:5px;
+  margin:10px;
+  background:white;
+}
+.label1 select:focus{
+  outline: 0px solid white;
+  border:none;
+}
+option {
+  font-size: 16px;
+  width:100%;
+  background-color: #bcc4c4;
+  border:none;
+  box-shadow: none;
+  outline: none;
+}
+
+
+@media (max-width: 450px){
+  body{
+    margin: 0;
+    width:95%;
+  }
+  .Main_box{
+  width: 94%;
+  padding:10px;
+  margin: auto;
+  }
+  .heading{
+    font-size: 15px;
+    padding:0px;
+  }
+  .Quots1 h4{
+    margin:20px;
+    font-size: 1.2rem;
+  }
+  .Quots1 h2{
+    color:rgb(25, 151, 0);
+    text-shadow: 1px 1px 1px grey;
+    font-size: 1.5rem;
+    background: #000;
+    border-radius: 10px 100px / 120px;
+    padding:10px;
+  }
+  .Quots1 i{
+    font-size: 1.1rem;
+    padding:2px;
+    border-radius: 1rem;
+  }
+  .label1{
+    font-size:20px;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-around;
+  }
+  .label1 select{
+    font-size: 1rem;
+    border:none;
+    box-shadow: 1px 1px 3px black;
+    margin-left: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    padding:5px;
+    margin:10px;
+    background:white;
+    width:40%;
+    color:#000;
+    display: flex;
+  }
+  option {
+    font-size: 7px;
+    width:40%;
+    height: 10px;
+  }
+  
+}
